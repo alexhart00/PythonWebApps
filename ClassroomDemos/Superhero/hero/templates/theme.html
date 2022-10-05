@@ -14,14 +14,37 @@
 <body class=" bg-dark text-light">
 
     <header class="bg-primary p-5 mb-5">
-        <h1>Hero Database</h1>
-        <h2>Data Views Application</h2>
-        <!-- <br>
-        <p>{% if user.is_authenticated %}
-        <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
-        {% else %}
-        <p>Welcome, new user. Please log in.</p>
-        {% endif %}</p> -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+            <div class="container">
+        
+                <a class="navbar-brand text-light" href="/">Hero Database</a>
+                <h2>Data Views Application</h2>
+        
+                <ul class="navbar-nav text-light ml-auto">        
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link  text-light " href="{% url 'logout' %}">Hello {{ user.username }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light " href="{% url 'logout' %}">Log out</a>
+                    </li>
+                    {% else %}
+        
+                    <li class="nav-item">
+                        <a class="nav-link  text-light " href="{% url 'login' %}">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light " href="{% url 'login' %}">Sign Up</a>
+                    </li>
+        
+                    {% endif %}
+        
+                </ul>
+        
+            </div>
+        
+        </nav>
     </header>
 
     <div class="container m-5">
