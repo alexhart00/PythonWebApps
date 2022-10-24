@@ -46,7 +46,7 @@ services:
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
-  name: pythonwebapps-classroom-demos
+  name: superhero
   routes:
   - path: /
   run_command: |-
@@ -62,7 +62,7 @@ static_sites:
     branch: main
     deploy_on_push: true
     repo: alexhart00/PythonWebApps
-  name: pythonwebapps-classroom-demos-su
+  name: superhero-static
   routes:
-  - path: /pythonwebapps-classroom-demos-su
+  - path: /static
   source_dir: Superhero/static
