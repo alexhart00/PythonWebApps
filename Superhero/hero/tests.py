@@ -3,6 +3,12 @@ from django.urls import reverse
 
 from .models import Superhero
 
+class HeroAppTest(SimpleTestCase):
+    
+    def test_django(self):
+        page = "https://squid-app-f5456.ondigitalocean.app/"
+        response = self.client.get(page)
+        self.assertEqual(response.status_code, 200)
 
 class PageAppTest(SimpleTestCase):
 
