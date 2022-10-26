@@ -39,10 +39,3 @@ class ArticleDeleteView(LoginRequiredMixin,DeleteView):
     model = Article
     template_name = 'article/delete.html'
     success_url = reverse_lazy('article_list')
-
-class DocumentView(TemplateView):
-    template_name = 'document.html'
-
-    def get_context_data(self, **kwargs):
-        document = self.kwargs.get('doc', 'Index')
-        return document_data(document)

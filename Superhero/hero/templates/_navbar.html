@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">Hero Database</a>
+
+        <ul class="navbar-nav text-light ml-auto">
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a href="/accounts/logout" class="btn btn-dark">Sign Out</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a href="/accounts/login" class="btn btn-dark">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a href="/accounts/signup" class="btn btn-dark">Sign Up</a>
+            </li>
+            {% endif%}
+            <li class="nav-item">
+                <a href="/article" class="btn btn-dark"> Articles</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/hero" class="btn btn-dark"> Heros</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/investigator" class="btn btn-dark"> Investigators</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <h2>Hello, {{user.username}}</h2>
+            </li>
+            {%else%}
+            <li class="nav-item">
+                <h3>Data Views Application</h3>
+            </li>
+            {%endif%}
+        </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,45 @@
+{% extends 'theme.html' %}
+{% block title %}
+Investigators Details
+{% endblock title %}
+
+{% block content %}
+
+<div class="container m-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg">
+                <div class="{{ card.width }} my-3">
+                    <div class="card">
+                        <div class="card-header {{ card.color }}">
+                            <h2>{{ object.title }}</h2>
+                        </div>
+                        <div class="card-body text-dark p-5">
+                            <table class="table">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{{ investigator.name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Author</td>
+                                    <td>
+                                        <b>{{ investigator.author}}</b>
+                                    </td>
+                                </tr>
+                            </table>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="/article/" class="btn btn-success m-5">investigator List</a>
+    <a href="/article/{{ object.pk }}/" class="btn btn-success m-5">Edit investigator</a>
+    <a href="/article/{{ object.pk }}/delete" class="btn btn-success m-5">Delete investigator</a>
+</div>
+
+{% endblock content %}
