@@ -1,6 +1,6 @@
 from django.urls import path, include
 from django.views.generic import RedirectView
-from .views import HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, SignUpView, UserUpdateView
+from .views import DocumentView, HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, PageView, SignUpView, UserUpdateView
 from .views_articles import ArticleCreateView, ArticleListView, ArticleDeleteView, ArticleDetailView, ArticleUpdateView
 from django.contrib import admin
 
@@ -23,5 +23,9 @@ urlpatterns = [
     path('article/add',               ArticleCreateView.as_view(),  name='article_add'),
     path('article/<int:pk>/',         ArticleUpdateView.as_view(),  name='article_edit'),
     path('article/<int:pk>/delete',   ArticleDeleteView.as_view(),  name='article_delete'),
+    #Template Views
+    path('doc/', DocumentView.as_view(), name='document'),
+    path('doc/<str:doc>', DocumentView.as_view()),
+    
 
 ]
