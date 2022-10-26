@@ -1,34 +1,41 @@
 {% extends 'theme.html' %}
-
+{% block title %}
+Article Details
+{% endblock title %}
 
 {% block content %}
 
 <div class="container m-5">
-
-    <h1 class="text-primary">Article Details</h1>
-
     <div class="container">
         <div class="row">
 
             <div class="col-lg">
-
-                <table class="table">
-                    <tr>
-                        <td>Title</td>
-                        <td>{{ object.title }}</td>
-                    </tr>
-                    <tr>
-                        <td>Author</td>
-                        <td>
-                            <b>{{ article.author}}</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Description</td>
-                        <td><b>{{ object.body }}</b></td>
-                    </tr>
-                </table>
-
+                <div class="{{ card.width }} my-3">
+                    <div class="card">
+                        <div class="card-header {{ card.color }}">
+                            <h2>{{ object.title }}</h2>
+                        </div>
+                        <div class="card-body text-dark p-5">
+                            <table class="table">
+                                <tr>
+                                    <td>Title</td>
+                                    <td>{{ object.title }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Author</td>
+                                    <td>
+                                        <b>{{ article.author}}</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td><b>{{ object.body }}</b></td>
+                                </tr>
+                            </table>
+                
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

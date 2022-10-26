@@ -1,11 +1,14 @@
 from django.urls import path, include
 from django.views.generic import RedirectView
-from .views import DocumentView, HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, PageView, SignUpView, UserUpdateView
+from .views import GalleryListView, HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, SignUpView, UserUpdateView
 from .views_articles import ArticleCreateView, ArticleListView, ArticleDeleteView, ArticleDetailView, ArticleUpdateView
+from .views_investigators import InvestigatorCreateView, InvestigatorListView, InvestigatorDeleteView, InvestigatorDetailView, InvestigatorUpdateView
 from django.contrib import admin
 
 urlpatterns = [
 
+    # Gallery
+    path('gallery',                GalleryListView.as_view(),    name='hero_gallery'),
     # Hero
     path('',                HeroListView.as_view(),    name='hero_list'),
     path('hero',                HeroListView.as_view(),    name='hero_list'),
@@ -23,9 +26,10 @@ urlpatterns = [
     path('article/add',               ArticleCreateView.as_view(),  name='article_add'),
     path('article/<int:pk>/',         ArticleUpdateView.as_view(),  name='article_edit'),
     path('article/<int:pk>/delete',   ArticleDeleteView.as_view(),  name='article_delete'),
-    #Template Views
-    path('doc/', DocumentView.as_view(), name='document'),
-    path('doc/<str:doc>', DocumentView.as_view()),
-    
-
+    #Investigator View
+    path('investigator/',                  InvestigatorListView.as_view(),    name='investigator_list'),
+    path('investigator/<int:pk>',          InvestigatorDetailView.as_view(),  name='investigator_detail'),
+    path('investigator/add',               InvestigatorCreateView.as_view(),  name='investigator_add'),
+    path('investigator/<int:pk>/',         InvestigatorUpdateView.as_view(),  name='investigator_edit'),
+    path('investigator/<int:pk>/delete',   InvestigatorDeleteView.as_view(),  name='investigator_delete'),
 ]

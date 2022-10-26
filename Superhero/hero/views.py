@@ -8,9 +8,13 @@ from django.views.generic import CreateView, DeleteView, DetailView, ListView, U
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
+from .markdown import document_data
 
 from .models import Superhero
 
+class GalleryListView(ListView):
+    template_name = 'gallery/list.html'
+    model = Superhero
 
 class HeroListView(ListView):
     template_name = 'hero/list.html'
@@ -57,9 +61,18 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
     fields = ['first_name', 'last_name', 'username', 'email']
     success_url = reverse_lazy('hero_list')
 
+class HtmlView(TemplateView):
+    template_name = 'home.html'
+
+class PageView(TemplateView):
+
+    def get_template_names(self):
+        page = self.kwargs.get('page', 'index')
+        return f'{page}.html'
+
 class DocumentView(TemplateView):
     template_name = 'document.html'
 
     def get_context_data(self, **kwargs):
         document = self.kwargs.get('doc', 'Index')
-        return DocumentView(document)
+        return document_data(document)

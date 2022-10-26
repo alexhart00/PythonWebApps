@@ -1,7 +1,7 @@
 from django.test import TestCase, SimpleTestCase
 from django.urls import reverse
 
-from .models import Superhero
+from .models import Investigator, Superhero
 
 class HeroAppTest(SimpleTestCase):
     
@@ -44,3 +44,14 @@ class SuperheroViewsTest(TestCase):
         response = self.client.post(reverse("superhero_add"), a)
         response = self.client.post(reverse("superhero_add"), b)
         self.assertEqual(len(Superhero.objects.all()), 2)
+
+class InvestigatorViewsTest(TestCase):
+    def test_investigator_list_view(self):
+        self.assertEqual(reverse("investigator_list"), "/investigator/")
+
+    def test_investigator_add_view(self):
+        a = dict(title='T 1', body='None')
+        b = dict(title='T 2', body='None')
+        response = self.client.post(reverse("investigator_add"), a)
+        response = self.client.post(reverse("investigator_add"), b)
+        self.assertEqual(len(Investigator.objects.all()), 2)

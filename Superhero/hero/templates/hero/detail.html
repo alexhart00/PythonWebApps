@@ -7,51 +7,124 @@ Hero Details
 
 
 {% block content %}
+<div class="m-3">
+    <div class="container">
 
-<div class="row">
+        <ul class="nav nav-tabs" role="tablist">
 
-    <div class="card col-lg">
+            
+            <li class="nav-item">
+                <a class="nav-link active" id="tab0-tab" data-bs-toggle="tab" href="#tab0">
+                    Hero
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link " id="tab1-tab" data-bs-toggle="tab" href="#tab1">
+                    Aritcle
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link " id="tab2-tab" data-bs-toggle="tab" href="#tab2">
+                    Investigator
+                </a>
+            </li>
+            
 
-        <div class="card-header person">
-            HERO
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane bg-light text-dark p-5 active show fade" id="tab0">
+                <div class="card">
+                    <div class="card-header {{ card.color }}">
+                        <h2>{{ object.name }}</h2>
+                    </div>
+                    <div class="card-body text-dark p-5">
+                        <table class="table">
+                            <tr>
+                                <td>image</td>
+                                <td><img src="/static/images/{{ object.image }}" alt="{{ object.image }}" width="300"></td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>{{ object.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Identity</td>
+                                <td>{{ object.identity }}</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>{{ object.description }}</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Strengths</td>
+                                <td>{{ object.strengths }}</td>
+                            </tr>
+                            <tr>
+                                <td>Weaknesses</td>
+                                <td>{{ object.weaknesses }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>
+                        <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-pane bg-light text-dark p-5   fade" id="tab1">
+                <div class="card">
+                    <div class="card-header {{ card.color }}">
+                        <h2>Article</h2>
+                    </div>
+                    <div class="card-body text-dark p-5">
+                        <table class="table">
+                            <tr>
+                                <td>Title</td>
+                                <td>How he saved the day</td>
+                            </tr>
+                            <tr>
+                                <td>Author</td>
+                                <td>
+                                    <b>Toolshed</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td><b>Playholder</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="tab-pane bg-light text-dark p-5   fade" id="tab2">
+                <div class="card">
+                    <div class="card-header {{ card.color }}">
+                        <h2>Investigator</h2>
+                    </div>
+                    <div class="card-body text-dark p-5">
+                        <table class="table">
+                            <tr>
+                                <td>User</td>
+                                <td><b>Toolshed</b></td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <b>Alex</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-
-
-            <table class="table">
-                <tr>
-                    <td>Name</td>
-                    <td><a href="/hero/{{ hero.pk }}/">{{ object.name }}</a></td>
-                </tr>
-                <tr>
-                    <td>Identity</td>
-                    <td>{{ object.identity }}</td>
-                </tr>
-                <tr>
-                    <td>Description</td>
-                    <td>{{ object.description }}</td>
-                </tr>
-                <tr>
-                    <td>image</td>
-                    <td><img src="/static/images/{{ object.image }}" alt="{{ object.image }}" width="150"></td>
-                </tr>
-                <tr>
-                    <td>Strengths</td>
-                    <td>{{ object.strengths }}</td>
-                </tr>
-                <tr>
-                    <td>Weaknesses</td>
-                    <td>{{ object.weaknesses }}</td>
-                </tr>
-            </table>
-
-            <p>
-                <a href="/add" class="btn btn-success m-5">Add New Hero</a>
-            </p>
-        </div>
-
     </div>
-
 </div>
-
 {% endblock content %}

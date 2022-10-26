@@ -6,7 +6,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import TemplateView
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
-
 from .models import Article
 
 
@@ -29,8 +28,6 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
     success_url = reverse_lazy('article_list')
 
-
-
 class ArticleUpdateView(LoginRequiredMixin, UpdateView):
     template_name = "article/edit.html"
     model = Article
@@ -43,3 +40,9 @@ class ArticleDeleteView(LoginRequiredMixin,DeleteView):
     template_name = 'article/delete.html'
     success_url = reverse_lazy('article_list')
 
+class DocumentView(TemplateView):
+    template_name = 'document.html'
+
+    def get_context_data(self, **kwargs):
+        document = self.kwargs.get('doc', 'Index')
+        return document_data(document)

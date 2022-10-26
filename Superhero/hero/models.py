@@ -22,3 +22,7 @@ class Article(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
     title = models.CharField(max_length=200)
     body = models.TextField()
+
+class Investigator(models.Model):
+    author = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
+    name = models.CharField(max_length=200)
