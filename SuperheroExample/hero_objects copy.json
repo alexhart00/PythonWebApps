@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Banana Man",
+        "identity": "Dallas Risen",
+        "description": "This is the face of Dallas, a true champion among giants. He stands elegantly among others, despite his heavy frame.\r\n\r\nThere's something ambiguous about him, perhaps it's his good looks, or perhaps it's simply his goodwill. But nonetheless, people tend to follow him, while secretly training to become more like him",
+        "image": "bananaMan.jpg",
+        "strengths": "Very high in potassium",
+        "weaknesses": "Too high in potassium"
+    },
+    {
+        "id": 2,
+        "name": "Chair Man",
+        "identity": "Gretchen Hart",
+        "description": "The is the face of Gretchen Hart, a true noblewoman among chairs. She stands seductively among others, despite her lean frame.\r\n\r\nThere's something inexplicable about her, perhaps it's a feeling of arrogance, or perhaps it's simply her good looks. But nonetheless, people tend to become her friend, while awkwardly avoiding talking about her past.",
+        "image": "chairMan.jpg",
+        "strengths": "Very strong",
+        "weaknesses": "Not very fast"
+    },
+    {
+        "id": 3,
+        "name": "Glue Man",
+        "identity": "Bill Goforth",
+        "description": "This is the face of Bill Goforth. He stands ordinary among others, despite his heavy frame.\r\n\r\nThere's something misleading about him, perhaps it's his kindness, or perhaps it's simply his goodwill. But nonetheless, people tend to wish to get to know him better, while trying to hide from him.",
+        "image": "glueMan.jpg",
+        "strengths": "Very Sticky",
+        "weaknesses": "Very Sticky"
+    },
+    {
+        "id": 4,
+        "name": "Water Man",
+        "identity": "Shad Lor",
+        "description": "This is the face of Shad Lor. He stands easily among others, despite his muscled frame.\r\n\r\nThere's something intriguing about him, perhaps it's a feeling of arrogance, or perhaps it's simply his friendly demeanor. But nonetheless, people tend to lie about knowing him to brag, while secretly admiring him.",
+        "image": "waterMan.jpg",
+        "strengths": "Wet",
+        "weaknesses": "Can't stand the heat"
+    },
+    {
+        "id": 5,
+        "name": "Watermelon Man",
+        "identity": "Big Chungus",
+        "description": "The is the face of Big Chungus.\r\n\r\nThere's something puzzling about her, perhaps it's her goodwill or perhaps it's simply her composure. But nonetheless, people tend to keep their distance, while making up bigger stories about her.",
+        "image": "watermelonMan.jpg",
+        "strengths": "Very strong",
+        "weaknesses": "Blind"
+    }
+]
