@@ -1,1 +1,713 @@
-[{"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add superhero", "content_type": 7, "codename": "add_superhero"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change superhero", "content_type": 7, "codename": "change_superhero"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete superhero", "content_type": 7, "codename": "delete_superhero"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view superhero", "content_type": 7, "codename": "view_superhero"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add article", "content_type": 8, "codename": "add_article"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change article", "content_type": 8, "codename": "change_article"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete article", "content_type": 8, "codename": "delete_article"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view article", "content_type": 8, "codename": "view_article"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add author", "content_type": 9, "codename": "add_author"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change author", "content_type": 9, "codename": "change_author"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete author", "content_type": 9, "codename": "delete_author"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view author", "content_type": 9, "codename": "view_author"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add investigator", "content_type": 10, "codename": "add_investigator"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change investigator", "content_type": 10, "codename": "change_investigator"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete investigator", "content_type": 10, "codename": "delete_investigator"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view investigator", "content_type": 10, "codename": "view_investigator"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add photo", "content_type": 11, "codename": "add_photo"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change photo", "content_type": 11, "codename": "change_photo"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete photo", "content_type": 11, "codename": "delete_photo"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view photo", "content_type": 11, "codename": "view_photo"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$390000$s9MQF31xTtqzp9Q0C48sW8$iPHhGVDwHdW68qMTK1pXmkxeX1RfrflWzpJ1aw59wXQ=", "last_login": "2022-11-09T21:32:10.398Z", "is_superuser": true, "username": "alex", "first_name": "", "last_name": "", "email": "alexhart3000@gmail.com", "is_staff": true, "is_active": true, "date_joined": "2022-10-05T21:05:45.527Z", "groups": [], "user_permissions": []}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "hero", "model": "superhero"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "hero", "model": "article"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "hero", "model": "author"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "hero", "model": "investigator"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "hero", "model": "photo"}}, {"model": "sessions.session", "pk": "bi51y7s9q3qnlx4dbf5ieoeuxwovt1b1", "fields": {"session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1ossg6:zJaVj6gpWBeh1ipVNdFYKdA0XdC5y4DcPeH1DVhP3LY", "expire_date": "2022-11-23T21:32:10.402Z"}}, {"model": "sessions.session", "pk": "cdnyv2an04x5grr6qwjkgrack5l7qxna", "fields": {"session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1oss53:TeICeN4sSUBAwT6cELFUMAP5OyY2YC6LAc4Y_mQWAYY", "expire_date": "2022-11-23T20:53:53.846Z"}}, {"model": "sessions.session", "pk": "gvp28m8k59u4etrctjbxs4db7f6ar4d3", "fields": {"session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1onq0L:gn3reLn7FqPqeRh8IUYHKG4ib17Gmt_FmgA09K7BDhU", "expire_date": "2022-11-09T23:40:13.534Z"}}, {"model": "sessions.session", "pk": "iyqo046pcraclsrqgv7gp7zbjcrx5c4b", "fields": {"session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1on1aI:RL5JsssP4NZONBaZ8ZosCcdAMa5mNneA5n06RN-Rvdo", "expire_date": "2022-11-07T17:49:58.550Z"}}, {"model": "sessions.session", "pk": "rm0vt38f633i9v7hmonlu1899vyxxtvo", "fields": {"session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1ogCMD:oI7Qu1BP5tzRZjdCj2ZTVj1BYW3p33XUWzUrBp8cdR0", "expire_date": "2022-10-19T21:55:13.066Z"}}, {"model": "hero.superhero", "pk": 1, "fields": {"name": "Banana Man", "identity": "Dallas Risen", "description": "This is the face of Dallas, a true champion among giants. He stands elegantly among others, despite his heavy frame.\r\n\r\nThere's something ambiguous about him, perhaps it's his good looks, or perhaps it's simply his goodwill. But nonetheless, people tend to follow him, while secretly training to become more like him", "image": "bananaMan.jpg", "strengths": "Very high in potassium", "weaknesses": "Too high in potassium"}}, {"model": "hero.superhero", "pk": 2, "fields": {"name": "Chair Man", "identity": "Gretchen Hart", "description": "The is the face of Gretchen Hart, a true noblewoman among chairs. She stands seductively among others, despite her lean frame.\r\n\r\nThere's something inexplicable about her, perhaps it's a feeling of arrogance, or perhaps it's simply her good looks. But nonetheless, people tend to become her friend, while awkwardly avoiding talking about her past.", "image": "chairMan.jpg", "strengths": "Very strong", "weaknesses": "Not very fast"}}, {"model": "hero.superhero", "pk": 3, "fields": {"name": "Glue Man", "identity": "Bill Goforth", "description": "This is the face of Bill Goforth. He stands ordinary among others, despite his heavy frame.\r\n\r\nThere's something misleading about him, perhaps it's his kindness, or perhaps it's simply his goodwill. But nonetheless, people tend to wish to get to know him better, while trying to hide from him.", "image": "glueMan.jpg", "strengths": "Very Sticky", "weaknesses": "Very Sticky"}}, {"model": "hero.superhero", "pk": 4, "fields": {"name": "Water Man", "identity": "Shad Lor", "description": "This is the face of Shad Lor. He stands easily among others, despite his muscled frame.\r\n\r\nThere's something intriguing about him, perhaps it's a feeling of arrogance, or perhaps it's simply his friendly demeanor. But nonetheless, people tend to lie about knowing him to brag, while secretly admiring him.", "image": "waterMan.jpg", "strengths": "Wet", "weaknesses": "Can't stand the heat"}}, {"model": "hero.superhero", "pk": 5, "fields": {"name": "Watermelon Man", "identity": "Big Chungus", "description": "The is the face of Big Chungus.\r\n\r\nThere's something puzzling about her, perhaps it's her goodwill or perhaps it's simply her composure. But nonetheless, people tend to keep their distance, while making up bigger stories about her.", "image": "watermelonMan.jpg", "strengths": "Very strong", "weaknesses": "Blind"}}, {"model": "hero.article", "pk": 3, "fields": {"author": 1, "title": "Banana Man Changed My Life. Here’s My Story", "body": "I was trapped in a tree banana man saved my life, thank you so much."}}, {"model": "hero.article", "pk": 4, "fields": {"author": 1, "title": "The Future of Water Man, According to an Expert", "body": "What lies in the future of Water Man with sea levels rising he will become stronger."}}, {"model": "hero.article", "pk": 5, "fields": {"author": 1, "title": "Why Celebrities Are Obsessed With Glue Man", "body": "He smells very good"}}, {"model": "hero.article", "pk": 6, "fields": {"author": 1, "title": "What the Government Doesn't Want You to Know About Chair Man", "body": "He doesn't follow the rules and he is known to be a hotshot with the ladies."}}, {"model": "hero.article", "pk": 7, "fields": {"author": 1, "title": "The Top 11 Watermelon Man Apps", "body": "If you need to find Watermelon Man, just dm him."}}, {"model": "hero.investigator", "pk": 1, "fields": {"author": 1, "name": "ToolShed"}}, {"model": "hero.investigator", "pk": 2, "fields": {"author": 1, "name": "Albert Oscar Hawthorn"}}, {"model": "hero.investigator", "pk": 3, "fields": {"author": 1, "name": "Boyd A. Armedrobber"}}, {"model": "hero.investigator", "pk": 4, "fields": {"author": 1, "name": "Oscar Boie McLay"}}, {"model": "hero.investigator", "pk": 5, "fields": {"author": 1, "name": "Alessandro A. Armedrobber-Hawthorn"}}, {"model": "hero.photo", "pk": 1, "fields": {"title": "Test image", "image": "images/Background_image.jpg"}}, {"model": "hero.photo", "pk": 2, "fields": {"title": "Test 2", "image": "images/test_2.jpg"}}, {"model": "hero.photo", "pk": 3, "fields": {"title": "Test 3", "image": "images/Test_3.jpg"}}]
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add superhero",
+    "content_type": 7,
+    "codename": "add_superhero"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change superhero",
+    "content_type": 7,
+    "codename": "change_superhero"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete superhero",
+    "content_type": 7,
+    "codename": "delete_superhero"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view superhero",
+    "content_type": 7,
+    "codename": "view_superhero"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add article",
+    "content_type": 8,
+    "codename": "add_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change article",
+    "content_type": 8,
+    "codename": "change_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete article",
+    "content_type": 8,
+    "codename": "delete_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view article",
+    "content_type": 8,
+    "codename": "view_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add author",
+    "content_type": 9,
+    "codename": "add_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change author",
+    "content_type": 9,
+    "codename": "change_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete author",
+    "content_type": 9,
+    "codename": "delete_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view author",
+    "content_type": 9,
+    "codename": "view_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add investigator",
+    "content_type": 10,
+    "codename": "add_investigator"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change investigator",
+    "content_type": 10,
+    "codename": "change_investigator"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete investigator",
+    "content_type": 10,
+    "codename": "delete_investigator"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view investigator",
+    "content_type": 10,
+    "codename": "view_investigator"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add photo",
+    "content_type": 11,
+    "codename": "add_photo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change photo",
+    "content_type": 11,
+    "codename": "change_photo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete photo",
+    "content_type": 11,
+    "codename": "delete_photo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view photo",
+    "content_type": 11,
+    "codename": "view_photo"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$s9MQF31xTtqzp9Q0C48sW8$iPHhGVDwHdW68qMTK1pXmkxeX1RfrflWzpJ1aw59wXQ=",
+    "last_login": "2022-11-09T21:32:10.398Z",
+    "is_superuser": true,
+    "username": "alex",
+    "first_name": "",
+    "last_name": "",
+    "email": "alexhart3000@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-05T21:05:45.527Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "hero",
+    "model": "superhero"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "hero",
+    "model": "article"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "hero",
+    "model": "author"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "hero",
+    "model": "investigator"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "hero",
+    "model": "photo"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bi51y7s9q3qnlx4dbf5ieoeuxwovt1b1",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1ossg6:zJaVj6gpWBeh1ipVNdFYKdA0XdC5y4DcPeH1DVhP3LY",
+    "expire_date": "2022-11-23T21:32:10.402Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cdnyv2an04x5grr6qwjkgrack5l7qxna",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1oss53:TeICeN4sSUBAwT6cELFUMAP5OyY2YC6LAc4Y_mQWAYY",
+    "expire_date": "2022-11-23T20:53:53.846Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gvp28m8k59u4etrctjbxs4db7f6ar4d3",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1onq0L:gn3reLn7FqPqeRh8IUYHKG4ib17Gmt_FmgA09K7BDhU",
+    "expire_date": "2022-11-09T23:40:13.534Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iyqo046pcraclsrqgv7gp7zbjcrx5c4b",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1on1aI:RL5JsssP4NZONBaZ8ZosCcdAMa5mNneA5n06RN-Rvdo",
+    "expire_date": "2022-11-07T17:49:58.550Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rm0vt38f633i9v7hmonlu1899vyxxtvo",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBZYKEevfuGhl1AqgaS0p6MfzckPeh1ZjJvMYd9K_Pe0zovUVyEEqdfRoGfqQ4RH6Hem-RWt3UhORJ52C5vLabX9Wj_BiX0MrZZnRGDjsg6J3KsMkdyhrL1gJ5BT6SMdwgILmuwzgBPWQGSNlaB-HwB4vo3Ew:1ogCMD:oI7Qu1BP5tzRZjdCj2ZTVj1BYW3p33XUWzUrBp8cdR0",
+    "expire_date": "2022-10-19T21:55:13.066Z"
+  }
+},
+{
+  "model": "hero.superhero",
+  "pk": 1,
+  "fields": {
+    "name": "Banana Man",
+    "identity": "Dallas Risen",
+    "description": "This is the face of Dallas, a true champion among giants. He stands elegantly among others, despite his heavy frame.\r\n\r\nThere's something ambiguous about him, perhaps it's his good looks, or perhaps it's simply his goodwill. But nonetheless, people tend to follow him, while secretly training to become more like him",
+    "image": "bananaMan.jpg",
+    "strengths": "Very high in potassium",
+    "weaknesses": "Too high in potassium"
+  }
+},
+{
+  "model": "hero.superhero",
+  "pk": 2,
+  "fields": {
+    "name": "Chair Man",
+    "identity": "Gretchen Hart",
+    "description": "The is the face of Gretchen Hart, a true noblewoman among chairs. She stands seductively among others, despite her lean frame.\r\n\r\nThere's something inexplicable about her, perhaps it's a feeling of arrogance, or perhaps it's simply her good looks. But nonetheless, people tend to become her friend, while awkwardly avoiding talking about her past.",
+    "image": "chairMan.jpg",
+    "strengths": "Very strong",
+    "weaknesses": "Not very fast"
+  }
+},
+{
+  "model": "hero.superhero",
+  "pk": 3,
+  "fields": {
+    "name": "Glue Man",
+    "identity": "Bill Goforth",
+    "description": "This is the face of Bill Goforth. He stands ordinary among others, despite his heavy frame.\r\n\r\nThere's something misleading about him, perhaps it's his kindness, or perhaps it's simply his goodwill. But nonetheless, people tend to wish to get to know him better, while trying to hide from him.",
+    "image": "glueMan.jpg",
+    "strengths": "Very Sticky",
+    "weaknesses": "Very Sticky"
+  }
+},
+{
+  "model": "hero.superhero",
+  "pk": 4,
+  "fields": {
+    "name": "Water Man",
+    "identity": "Shad Lor",
+    "description": "This is the face of Shad Lor. He stands easily among others, despite his muscled frame.\r\n\r\nThere's something intriguing about him, perhaps it's a feeling of arrogance, or perhaps it's simply his friendly demeanor. But nonetheless, people tend to lie about knowing him to brag, while secretly admiring him.",
+    "image": "waterMan.jpg",
+    "strengths": "Wet",
+    "weaknesses": "Can't stand the heat"
+  }
+},
+{
+  "model": "hero.superhero",
+  "pk": 5,
+  "fields": {
+    "name": "Watermelon Man",
+    "identity": "Big Chungus",
+    "description": "The is the face of Big Chungus.\r\n\r\nThere's something puzzling about her, perhaps it's her goodwill or perhaps it's simply her composure. But nonetheless, people tend to keep their distance, while making up bigger stories about her.",
+    "image": "watermelonMan.jpg",
+    "strengths": "Very strong",
+    "weaknesses": "Blind"
+  }
+},
+{
+  "model": "hero.article",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "title": "Banana Man Changed My Life. Here’s My Story",
+    "body": "I was trapped in a tree banana man saved my life, thank you so much."
+  }
+},
+{
+  "model": "hero.article",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "title": "The Future of Water Man, According to an Expert",
+    "body": "What lies in the future of Water Man with sea levels rising he will become stronger."
+  }
+},
+{
+  "model": "hero.article",
+  "pk": 5,
+  "fields": {
+    "author": 1,
+    "title": "Why Celebrities Are Obsessed With Glue Man",
+    "body": "He smells very good"
+  }
+},
+{
+  "model": "hero.article",
+  "pk": 6,
+  "fields": {
+    "author": 1,
+    "title": "What the Government Doesn't Want You to Know About Chair Man",
+    "body": "He doesn't follow the rules and he is known to be a hotshot with the ladies."
+  }
+},
+{
+  "model": "hero.article",
+  "pk": 7,
+  "fields": {
+    "author": 1,
+    "title": "The Top 11 Watermelon Man Apps",
+    "body": "If you need to find Watermelon Man, just dm him."
+  }
+},
+{
+  "model": "hero.investigator",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "name": "ToolShed"
+  }
+},
+{
+  "model": "hero.investigator",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "name": "Albert Oscar Hawthorn"
+  }
+},
+{
+  "model": "hero.investigator",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "name": "Boyd A. Armedrobber"
+  }
+},
+{
+  "model": "hero.investigator",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "name": "Oscar Boie McLay"
+  }
+},
+{
+  "model": "hero.investigator",
+  "pk": 5,
+  "fields": {
+    "author": 1,
+    "name": "Alessandro A. Armedrobber-Hawthorn"
+  }
+},
+{
+  "model": "hero.photo",
+  "pk": 1,
+  "fields": {
+    "title": "Test image",
+    "image": "images/Background_image.jpg"
+  }
+},
+{
+  "model": "hero.photo",
+  "pk": 2,
+  "fields": {
+    "title": "Test 2",
+    "image": "images/test_2.jpg"
+  }
+},
+{
+  "model": "hero.photo",
+  "pk": 3,
+  "fields": {
+    "title": "Test 3",
+    "image": "images/Test_3.jpg"
+  }
+}
+]

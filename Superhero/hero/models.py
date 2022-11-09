@@ -29,7 +29,7 @@ class Investigator(models.Model):
 
 
 def get_upload(instance, filename):
-    return f'{filename}' ##images/ removed
+    return f'images/{filename}' 
 
 class Photo (models.Model):
     title = models.CharField(max_length=100)
