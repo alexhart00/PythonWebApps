@@ -3,12 +3,13 @@ from re import template
 from django.urls import reverse_lazy
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from django.views.generic import TemplateView
-from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
+from django.views.generic import CreateView, DeleteView, DetailView, ListView, RedirectView, TemplateView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .markdown import document_data
+
+from .models import Photo
 
 from .models import Superhero
 
@@ -76,3 +77,5 @@ class DocumentView(TemplateView):
     def get_context_data(self, **kwargs):
         document = self.kwargs.get('doc', 'Index')
         return document_data(document)
+
+

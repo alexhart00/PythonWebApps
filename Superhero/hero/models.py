@@ -26,3 +26,17 @@ class Article(models.Model):
 class Investigator(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
     name = models.CharField(max_length=200)
+
+
+def get_upload(instance, filename):
+    return f'{filename}' ##images/ removed
+
+class Photo (models.Model):
+    title = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True, upload_to=get_upload)
+
+    def __str__(self):
+        return f'{self.pk} - {self.title}'
+
+    def get_absolute_url(self):
+        return reverse_lazy('photo_detail', args=[str(self.id)])

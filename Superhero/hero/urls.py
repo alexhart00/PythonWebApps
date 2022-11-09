@@ -1,9 +1,13 @@
 from django.urls import path, include
 from django.views.generic import RedirectView
+from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import path
 from .views import GalleryListView, HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, SignUpView, UserUpdateView
 from .views_articles import ArticleCreateView, ArticleListView, ArticleDeleteView, ArticleDetailView, ArticleUpdateView
 from .views_investigators import InvestigatorCreateView, InvestigatorListView, InvestigatorDeleteView, InvestigatorDetailView, InvestigatorUpdateView
-from django.contrib import admin
+from .views_photo import PhotoCarouselView, PhotoDeleteView, PhotoDetailView, PhotoListView, PhotoCreateView, PhotoUpdateView
 
 urlpatterns = [
 
@@ -32,4 +36,15 @@ urlpatterns = [
     path('investigator/add',               InvestigatorCreateView.as_view(),  name='investigator_add'),
     path('investigator/<int:pk>/',         InvestigatorUpdateView.as_view(),  name='investigator_edit'),
     path('investigator/<int:pk>/delete',   InvestigatorDeleteView.as_view(),  name='investigator_delete'),
-]
+    # Photo
+    path('photo/',                      PhotoListView.as_view(),    name='photo_list'),
+    path('photo/<int:pk>',              PhotoDetailView.as_view(),  name='photo_detail'),
+    path('photo/add',                   PhotoCreateView.as_view(),  name='photo_add'),
+    path('photo/<int:pk>/',             PhotoUpdateView.as_view(),  name='photo_edit'),
+    path('photo/<int:pk>/delete',       PhotoDeleteView.as_view(),  name='photo_delete'),
+
+    # Photo Display
+    path('photo/carousel',              PhotoCarouselView.as_view()),
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
