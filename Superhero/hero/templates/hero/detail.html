@@ -44,7 +44,7 @@ Hero Details
                         <table class="table">
                             <tr>
                                 <td>image</td>
-                                <td><img src="/static/images/{{ object.image }}" alt="{{ object.image }}" width="300"></td>
+                                <td><img src="/media/images/{{ object.image }}" alt="{{ object.image }}" width="300"></td>
                             </tr>
                             <tr>
                                 <td>Name</td>
@@ -71,6 +71,7 @@ Hero Details
                     </div>
                     <p>
                         <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
+                        <a href="/hero/{{ object.pk }}/edit" class="btn btn-success m-5">Edit Hero</a>
                     </p>
                 </div>
             </div>

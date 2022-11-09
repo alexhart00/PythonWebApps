@@ -688,26 +688,42 @@
 },
 {
   "model": "hero.photo",
-  "pk": 1,
+  "pk": 5,
   "fields": {
-    "title": "Test image",
-    "image": "images/Background_image.jpg"
+    "title": "bananaMan",
+    "image": "images/bananaMan.jpg"
   }
 },
 {
   "model": "hero.photo",
-  "pk": 2,
+  "pk": 6,
   "fields": {
-    "title": "Test 2",
-    "image": "images/test_2.jpg"
+    "title": "chairMan",
+    "image": "images/chairMan.jpg"
   }
 },
 {
   "model": "hero.photo",
-  "pk": 3,
+  "pk": 7,
   "fields": {
-    "title": "Test 3",
-    "image": "images/Test_3.jpg"
+    "title": "glueMan",
+    "image": "images/glueMan.jpg"
+  }
+},
+{
+  "model": "hero.photo",
+  "pk": 8,
+  "fields": {
+    "title": "waterMan",
+    "image": "images/waterMan.jpg"
+  }
+},
+{
+  "model": "hero.photo",
+  "pk": 9,
+  "fields": {
+    "title": "watermelonMan",
+    "image": "images/watermelonMan.jpg"
   }
 }
 ]
