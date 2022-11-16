@@ -9,11 +9,11 @@ def build_code():
     print('build_code()')
     # generate_software_planner()
     # generate_static_site
-    # generate_course()
+    generate_course()
     # generate_messenger()
     # generate_blog()
     # generate_book()
-    generate_hero()
+    #generate_hero()
 
 
 def generate_hero():
