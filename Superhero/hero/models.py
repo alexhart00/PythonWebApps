@@ -40,3 +40,7 @@ class Photo (models.Model):
 
     def get_absolute_url(self):
         return reverse_lazy('photo_detail', args=[str(self.id)])
+
+class Message(models.Model):
+    title = models.CharField(max_length=100)
+    text = models.TextField()

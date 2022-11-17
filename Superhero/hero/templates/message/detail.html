@@ -1,0 +1,43 @@
+{% extends 'theme.html' %}
+{% block title %}
+Article Details
+{% endblock title %}
+
+{% block content %}
+
+<div class="container m-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg">
+                <div class="{{ card.width }} my-3">
+                    <div class="card">
+                        <div class="card-header {{ card.color }}">
+                            <h2>{{ object.title }}</h2>
+                        </div>
+                        <div class="card-body text-dark p-5">
+                            <table class="table">
+                                <tr>
+                                    <td>Title</td>
+                                    <td>{{ object.title }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Message</td>
+                                    <td><b>{{ object.text }}</b></td>
+                                </tr>
+                            </table>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="/message" class="btn btn-success m-5">Message Board</a>
+    <a href="/message/{{ object.pk }}/edit" class="btn btn-success m-5">Edit Message</a>
+    <a href="/message/{{ object.pk }}/delete" class="btn btn-success m-5">Delete Message</a>
+</div>
+
+{% endblock content %}

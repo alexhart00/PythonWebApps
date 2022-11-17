@@ -8,6 +8,7 @@ from .views import GalleryListView, HeroCreateView, HeroDeleteView, HeroDetailVi
 from .views_articles import ArticleCreateView, ArticleListView, ArticleDeleteView, ArticleDetailView, ArticleUpdateView
 from .views_investigators import InvestigatorCreateView, InvestigatorListView, InvestigatorDeleteView, InvestigatorDetailView, InvestigatorUpdateView
 from .views_photo import PhotoCarouselView, PhotoDeleteView, PhotoDetailView, PhotoListView, PhotoCreateView, PhotoUpdateView
+from .views_message import MessageCreateView, MessageListView, MessageDeleteView, MessageDetailView, MessageUpdateView
 
 urlpatterns = [
 
@@ -45,6 +46,13 @@ urlpatterns = [
 
     # Photo Display
     path('photo/carousel',              PhotoCarouselView.as_view()),
+
+    path('',                MessageListView.as_view(),    name='message_list'),
+    path('message',               MessageListView.as_view(),    name='message_list'),
+    path('message/<int:pk>',        MessageDetailView.as_view(),  name='message_detail'),
+    path('message/add',             MessageCreateView.as_view(),  name='message_add'),
+    path('message/<int:pk>/edit',       MessageUpdateView.as_view(),  name='message_edit'),
+    path('message/<int:pk>/delete', MessageDeleteView.as_view(),  name='message_delete'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
